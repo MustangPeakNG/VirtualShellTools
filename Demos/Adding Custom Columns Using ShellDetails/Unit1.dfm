@@ -1,0 +1,55 @@
+object Form1: TForm1
+  Left = 534
+  Top = 326
+  Caption = 'Form1'
+  ClientHeight = 463
+  ClientWidth = 844
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object VirtualExplorerListview1: TVirtualExplorerListview
+    Left = 0
+    Top = 0
+    Width = 844
+    Height = 463
+    Active = True
+    Align = alClient
+    ColumnDetails = cdShellColumns
+    DefaultNodeHeight = 17
+    DragHeight = 250
+    DragWidth = 150
+    FileObjects = [foFolders, foNonFolders, foHidden, foEnableAsync]
+    FileSizeFormat = fsfExplorer
+    FileSort = fsFileType
+    Header.AutoSizeIndex = -1
+    Header.Options = [hoColumnResize, hoDblClickResize, hoDrag, hoShowSortGlyphs, hoVisible]
+    Header.ParentFont = True
+    Header.SortColumn = 0
+    Header.Style = hsFlatButtons
+    HintMode = hmHint
+    Indent = 0
+    ParentColor = False
+    RootFolder = rfDesktop
+    TabOrder = 0
+    TabStop = True
+    TreeOptions.AutoOptions = [toAutoScroll]
+    TreeOptions.MiscOptions = [toAcceptOLEDrop, toEditable, toReportMode, toToggleOnDblClick]
+    TreeOptions.PaintOptions = [toShowTreeLines, toUseBlendedImages, toGhostedIfUnfocused]
+    TreeOptions.SelectionOptions = [toMultiSelect, toRightClickSelect, toSiblingSelectConstraint]
+    TreeOptions.VETFolderOptions = [toHideRootFolder, toThreadedExpandMark]
+    TreeOptions.VETShellOptions = [toRightAlignSizeColumn, toContextMenus, toShellColumnMenu]
+    TreeOptions.VETSyncOptions = [toCollapseTargetFirst, toExpandTarget, toSelectTarget]
+    TreeOptions.VETMiscOptions = [toBrowseExecuteFolder, toBrowseExecuteFolderShortcut, toBrowseExecuteZipFolder, toChangeNotifierThread, toExecuteOnDblClk]
+    TreeOptions.VETImageOptions = [toImages, toThreadedImages, toMarkCutAndCopy]
+    OnCustomColumnCompare = ExplorerListview1CustomColumnCompare
+    OnGetVETText = ExplorerListview1GetVETText
+    ColumnMenuItemCount = 8
+    OnHeaderRebuild = ExplorerListview1HeaderRebuild
+  end
+end
